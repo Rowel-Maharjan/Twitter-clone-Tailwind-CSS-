@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home / X</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <link href="./css/output.css" rel="stylesheet">
@@ -66,6 +67,8 @@
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
                         <span class="material-symbols-outlined text-3xl">Unfold_More</span>More
                     </li>
+                    <input class="bg-blue-700 cursor-pointer px-5 py-2 rounded-3xl font-semibold" type="button"
+                        value="Post">
                 </ul>
             </div>
         </div>
@@ -80,7 +83,7 @@
                 </div>
             </div>
 
-            <div class="happening border border-[#2f3336] p-4 flex flex-col gap-4">
+            <div class="happening border-y border-[#2f3336] p-4 flex flex-col gap-3">
                 <div class="flex gap-4">
                     <div class="image">
                         <img src="/image/profile.png" class="w-10 rounded-full" alt="Image not found">
@@ -88,25 +91,156 @@
                     <input type="text" class="bg-transparent border-none focus:outline-none text-2xl"
                         placeholder="What is happening?!">
                 </div>
-                <div class="blueicons flex gap-2">
-                    <span class="material-symbols-outlined">
-                        image
-                    </span>
-                    <span class="material-symbols-outlined">
-                        gif_box
-                    </span>
-                    <span class="material-symbols-outlined">
-                        ballot
-                    </span>
-                    <span class="material-symbols-outlined">
-                        mood
-                    </span>
-                    <span class="material-symbols-outlined">
-                        pending_actions
-                    </span>
-                    <span class="material-symbols-outlined">
-                        location_on
-                    </span>
+                <div class="blueicons flex gap-4 ml-14 my-1 items-center justify-between">
+                    <div class="flex gap-4">
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">image</span>
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">gif_box</span>
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">ballot</span>
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">mood</span>
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">pending_actions</span>
+                        <span
+                            class="material-symbols-outlined cursor-pointer text-[#1d9bf0] hover:bg-[#092030] rounded-full p-1">location_on</span>
+                    </div>
+                    <input class="bg-blue-700 cursor-pointer px-5 py-1 rounded-3xl font-semibold" type="button"
+                        value="Post">
+                </div>
+            </div>
+            <div class="posts mb-4">
+                <div class="post flex gap-3 border-b border-[#2f3336] p-4">
+                    <div class="image">
+                        <img src="/image/elon.jpg" alt="Image Not found" class="rounded-full">
+                    </div>
+                    <div class="box flex flex-col">
+                        <div class="account flex">
+                            <span class="font-bold cursor-pointer hover:underline">Elon Musk</span>
+                            <img src="/image/tick.svg" alt="Not found" class="w-5">
+                            <div class="text-gray-400">@elonmusk . 20h</div>
+                        </div>
+                        <div class="caption">Those who would give up essential liberty to purchase a little temporary
+                            safety deserve neither liberty nor safety.</div>
+                        <div class="postImage mt-3">
+                            <img src="/image/Image1.jpg" alt="Image not found" class="rounded-3xl w-[90%]">
+                        </div>
+                        <div class="icons flex items-center justify-between mt-2">
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        chat_bubble
+                                    </span>11k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-green-400">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#031d0d]">
+                                        repeat
+                                    </span>64k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-red-500">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#300a0a]">
+                                        favorite
+                                    </span>634k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        bar_chart
+                                    </span>24M
+                                </div>
+                            </div>
+                            <div class="icon flex items-center text-gray-400 cursor-pointer">
+                                <span
+                                    class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    bookmark
+                                </span>
+                                <span
+                                    class="material-symbols-outlined text-xl border  rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    upload
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="post flex gap-3 border-b border-[#2f3336] p-4">
+                    <div class="image">
+                        <img src="/image/Biden.jpg" alt="Image Not found" class="rounded-full">
+                    </div>
+                    <div class="box flex flex-col">
+                        <div class="account flex">
+                            <span class="font-bold cursor-pointer hover:underline">President Biden</span>
+                            <img src="/image/tick.svg" alt="Not found" class="w-5">
+                            <div class="text-gray-400">@POTUS . 2h</div>
+                        </div>
+                        <div class="caption">Those who would give up essential liberty to purchase a little temporary
+                            safety deserve neither liberty nor safety.</div>
+                        <div class="postImage mt-3">
+                            <img src="/image/messi.jpg" alt="Image not found" class="rounded-3xl w-[90%]">
+                        </div>
+                        <div class="icons flex items-center justify-between mt-2">
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        chat_bubble
+                                    </span>211k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-green-400">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#031d0d]">
+                                        repeat
+                                    </span>264k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-red-500">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#300a0a]">
+                                        favorite
+                                    </span>934k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        bar_chart
+                                    </span>241M
+                                </div>
+                            </div>
+                            <div class="icon flex items-center text-gray-400 cursor-pointer">
+                                <span
+                                    class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    bookmark
+                                </span>
+                                <span
+                                    class="material-symbols-outlined text-xl border  rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    upload
+                                </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
