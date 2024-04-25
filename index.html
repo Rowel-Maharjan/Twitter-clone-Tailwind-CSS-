@@ -14,7 +14,7 @@
 <body class="bg-black text-white">
     <div class="flex mx-auto container">
         <div class="first w-[28%]">
-            <div class="sidebar flex mt-3">
+            <div class="sidebar flex mt-3 sticky top-3">
                 <ul class="flex flex-col text-xl space-y-3 font-bold">
                     <div class="logo invert pl-4 pr-5">
                         <svg viewBox="0 0 24 24" aria-hidden="true"
@@ -28,23 +28,28 @@
                     </div>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">home</span>Home
+                        <span class="material-symbols-outlined text-3xl">home</span><span
+                            class="hidden md:block">Home</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">Search</span>Explore
+                        <span class="material-symbols-outlined text-3xl">Search</span><span
+                            class="hidden md:block">Explore</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">Notifications</span>Notifications
+                        <span class="material-symbols-outlined text-3xl">Notifications</span><span
+                            class="hidden md:block">Notifications</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">Mail</span>Messages
+                        <span class="material-symbols-outlined text-3xl">Mail</span><span
+                            class="hidden md:block">Messages</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">List_alt</span>Lists
+                        <span class="material-symbols-outlined text-3xl">List_alt</span><span
+                            class="hidden md:block">Lists</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
@@ -57,24 +62,31 @@
                                     </path>
                                 </g>
                             </svg>
-                        </div>Premium
+                        </div><span class="hidden md:block">Premium</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">Person</span>Profile
+                        <span class="material-symbols-outlined text-3xl">Person</span><span
+                            class="hidden md:block">Profile</span>
                     </li>
                     <li
                         class="items-center flex gap-4 hover:bg-[#1d1e1f] w-fit rounded-full pl-4 pr-5 py-1 cursor-pointer ">
-                        <span class="material-symbols-outlined text-3xl">Unfold_More</span>More
+                        <span class="material-symbols-outlined text-3xl">Unfold_More</span><span
+                            class="hidden md:block">More</span>
                     </li>
-                    <input class="bg-blue-700 cursor-pointer px-5 py-2 rounded-3xl font-semibold" type="button"
-                        value="Post">
+                    <li>
+                        <button
+                            class="bg-blue-700 cursor-pointer  font-semibold md:hidden block items-center w-fit rounded-full p-4 ml-1"><img
+                                src="/image/post.svg" alt="Image not found" class="w-6"></button>
+                        <button
+                            class="bg-blue-700 cursor-pointer w-[90%] font-bold md:block hidden items-center rounded-full p-3 ml-1">Post</button>
+                    </li>
                 </ul>
             </div>
         </div>
 
-        <div class="second w-[65%] border-[1px] border-x-[#2f3336] border-y-black">
-            <div class="top flex relative">
+        <div class="second md:w-[65%] border-[1px] border-x-[#2f3336] border-y-black ">
+            <div class="top flex sticky top-0 bg-black opacity-80">
                 <div class="absolute w-[60px] bg-blue-700 h-1 bottom-0 left-[19%] rounded-sm"></div>
                 <div class="left w-1/2 text-center p-3 font-bold cursor-pointer hover:bg-[#1d1e1f]">For you</div>
                 <div class="right w-1/2 text-center p-3 text-gray-400 cursor-pointer hover:bg-[#1d1e1f]">Following</div>
@@ -86,7 +98,7 @@
             <div class="happening border-y border-[#2f3336] p-4 flex flex-col gap-3">
                 <div class="flex gap-4">
                     <div class="image">
-                        <img src="/image/profile.png" class="w-10 rounded-full" alt="Image not found">
+                        <img src="/image/profile.png" class="max-w-10 rounded-full" alt="Image not found">
                     </div>
                     <input type="text" class="bg-transparent border-none focus:outline-none text-2xl"
                         placeholder="What is happening?!">
@@ -113,7 +125,7 @@
             <div class="posts mb-4">
                 <div class="post flex gap-3 border-b border-[#2f3336] p-4">
                     <div class="image">
-                        <img src="/image/elon.jpg" alt="Image Not found" class="rounded-full">
+                        <img src="/image/elon.jpg" alt="Image Not found" class="rounded-full min-w-12">
                     </div>
                     <div class="box flex flex-col">
                         <div class="account flex">
@@ -176,10 +188,10 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="post flex gap-3 border-b border-[#2f3336] p-4">
                     <div class="image">
-                        <img src="/image/Biden.jpg" alt="Image Not found" class="rounded-full">
+                        <img src="/image/Biden.jpg" alt="Image Not found" class="rounded-full min-w-12">
                     </div>
                     <div class="box flex flex-col">
                         <div class="account flex">
@@ -187,8 +199,74 @@
                             <img src="/image/tick.svg" alt="Not found" class="w-5">
                             <div class="text-gray-400">@POTUS . 2h</div>
                         </div>
-                        <div class="caption">Those who would give up essential liberty to purchase a little temporary
-                            safety deserve neither liberty nor safety.</div>
+                        <div class="caption">Worlcup Winner Messi</div>
+                        <div class="postImage mt-3">
+                            <img src="/image/messi.jpg" alt="Image not found" class="rounded-3xl w-[90%]">
+                        </div>
+                        <div class="icons flex items-center justify-between mt-2">
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        chat_bubble
+                                    </span>211k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-green-400">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#031d0d]">
+                                        repeat
+                                    </span>264k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-red-500">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#300a0a]">
+                                        favorite
+                                    </span>934k
+                                </div>
+                            </div>
+                            <div class="group">
+                                <div
+                                    class="icon flex items-center gap-1 text-gray-400 cursor-pointer hover:text-[#1d9bf0]">
+                                    <span
+                                        class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none group-hover:bg-[#092030]">
+                                        bar_chart
+                                    </span>241M
+                                </div>
+                            </div>
+                            <div class="icon flex items-center text-gray-400 cursor-pointer">
+                                <span
+                                    class="material-symbols-outlined text-xl border rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    bookmark
+                                </span>
+                                <span
+                                    class="material-symbols-outlined text-xl border  rounded-full px-[6px] py-[4px] border-none hover:bg-[#092030] hover:text-[#1d9bf0]">
+                                    upload
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="post flex gap-3 border-b border-[#2f3336] p-4">
+                    <div class="image">
+                        <img src="/image/Biden.jpg" alt="Image Not found" class="rounded-full min-w-12">
+                    </div>
+                    <div class="box flex flex-col">
+                        <div class="account flex">
+                            <span class="font-bold cursor-pointer hover:underline">President Biden</span>
+                            <img src="/image/tick.svg" alt="Not found" class="w-5">
+                            <div class="text-gray-400">@POTUS . 2h</div>
+                        </div>
+                        <div class="caption">Worlcup Winner Messi</div>
                         <div class="postImage mt-3">
                             <img src="/image/messi.jpg" alt="Image not found" class="rounded-3xl w-[90%]">
                         </div>
@@ -245,8 +323,8 @@
             </div>
         </div>
 
-        <div class="third w-[33%] mx-7">
-            <div class="search mt-2">
+        <div class="third md:w-[33%] mx-7 hidden md:block">
+            <div class="search pt-2 sticky top-0 bg-black">
                 <label for="default-search"
                     class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
                 <div class="relative">
@@ -317,7 +395,7 @@
             </div>
 
 
-            <div class="Who border border-[#2f3336] rounded-2xl">
+            <div class="Who border border-[#2f3336] rounded-2xl sticky top-16">
                 <h1 class="font-bold text-xl py-3 px-4">Who to follow</h1>
 
                 <div class="items text-sm cursor-pointer ">
